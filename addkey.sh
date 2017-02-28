@@ -1,2 +1,2 @@
 #!/bin/bash
-cat ~/.ssh/id_rsa.pub >> ./pubkeys/index.html
+cat ~/.ssh/id_rsa.pub >> ./public_keys/index.html
