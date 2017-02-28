@@ -5,15 +5,16 @@
 ##addkeys
 `cd pubkeys && sh addkey.sh`
 
-##example apache conf
-DocumentRoot is public_keys
-`<VirtualHost *:80>`
-`    DocumentRoot /[path]/public_keys`
-`    ServerName pubkeys.yasuken1990.com`
-`    <Directory "/[path]/public_keys">`
-`        Options Indexes FollowSymLinks`
-`        AllowOverride all`
-`        Order allow,deny`
-`        Allow from all`
-`    </Directory>`
-`</VirtualHost>`
+##example apache conf 
+```example.con
+<VirtualHost *:80>  
+    DocumentRoot /[path]/public_keys  
+    ServerName pubkeys.yasuken1990.com  
+    <Directory "/[path]/public_keys">  
+        Options Indexes FollowSymLinks  
+        AllowOverride all  
+        Order allow,deny  
+        Allow from all  
+    </Directory>  
+</VirtualHost>  
+```
